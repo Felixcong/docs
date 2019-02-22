@@ -45,6 +45,13 @@
   ![](https://raw.githubusercontent.com/Felixcong/docs/master/images/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83-%E9%A6%96%E9%A1%B5.png)
   ![](https://raw.githubusercontent.com/Felixcong/docs/master/images/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83-%E5%BD%A2%E8%B1%A1%E7%BC%96%E8%BE%91.png)
 
+### 宏观经济
+
+- 入口：应用中心->宏观经济（3D）
+  ![](https://raw.githubusercontent.com/Felixcong/docs/master/images/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E.png)
+
+## 基础工具建设
+
 ### vue 项目脚手架
 
 目标：提升 20%开发效率，统一项目目录结构，接口请求方式等
@@ -58,6 +65,7 @@
 - 非浏览器环境集成 Vue-devtools
 - <10k 图片转化成 base64 编码，无需上传
 - 提供 VueX 模块化、路由/组件懒加载、多页面配置示例代码
+- 清晰的项目结构、高效可维护
 
 ### vue 项目脚手架插件
 
@@ -66,7 +74,12 @@
 - 基于 Vue-cli3 插件系统 提供脚手架方面的多种个性化需求配置
 - 一行命令 打包并上传资源服务器
 
-### 宏观经济
+### 前端异常监控平台
 
-- 入口：应用中心->宏观经济
-  ![](https://raw.githubusercontent.com/Felixcong/docs/master/images/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E.png)
+> 本人主要负责前端异常的捕获和错误信息上传
+> 核心功能：
+
+- 监控线上代码报错
+- 监控静态资源请求出现异常
+- 监控请求接口出现异常（通过代理 xhr 实现，还没实现 fetch 请求异常的监控）
+- 检测到异常上传错误堆栈信息（精确到哪一行代码），用户 ip，系统、浏览器版本等信息，帮助重现错误。缩短线上 bug 从出现到解决时间的时间。
