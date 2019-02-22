@@ -83,3 +83,4 @@
 - 监控静态资源请求出现异常
 - 监控请求接口出现异常（通过代理 xhr 实现，还没实现 fetch 请求异常的监控）
 - 检测到异常上传错误堆栈信息（精确到哪一行代码），用户 ip，系统、浏览器版本等信息，帮助重现错误。缩短线上 bug 从出现到解决时间的时间。
+  ![](https://raw.githubusercontent.com/Felixcong/docs/master/images/%E5%89%8D%E7%AB%AF%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0.png)
